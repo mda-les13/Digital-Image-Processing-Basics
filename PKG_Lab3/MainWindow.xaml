@@ -1,0 +1,60 @@
+﻿<Window x:Class="PKG_Lab3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PKG_Lab3"
+        mc:Ignorable="d"
+        Title="Lab3" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Button Click="LoadImage_Click" Grid.Column="1" Grid.Row="13" Grid.ColumnSpan="13">Загрузить изображение</Button>
+        <Button Click="LocalThresholding1_Click" Grid.Column="1" Grid.Row="14" Grid.ColumnSpan="13">Локальная пороговая обработка (метод Отсу)</Button>
+        <Button Click="LocalThresholding2_Click" Grid.Column="1" Grid.Row="15" Grid.ColumnSpan="13">Локальная пороговая обработка (метод Ниблака)</Button>
+        <Button Click="AdaptiveThreshold_Click" Grid.Column="1" Grid.Row="16" Grid.ColumnSpan="13">Адаптивная пороговая обработка</Button>
+        <Button Click="LowPassFilter_Click" Grid.Column="1" Grid.Row="17" Grid.ColumnSpan="13">Низкочастотный фильтр</Button>
+        <Button Click="ClearImages_Click" Grid.Column="1" Grid.Row="18" Grid.ColumnSpan="13">Очистить изображения</Button>
+        <Button Content="Сохранить изменённое изображение" Click="SaveImage_Click" Grid.Column="1" Grid.Row="19" Grid.ColumnSpan="13"/>
+        <Image x:Name="OriginalImage" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="6" Grid.RowSpan="12"/>
+        <Image x:Name="ProcessedImage" Grid.Column="8" Grid.Row="0" Grid.ColumnSpan="6" Grid.RowSpan="12"/>
+    </Grid>
+</Window>
