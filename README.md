@@ -25,7 +25,7 @@
 ### Шаги установки:
 
 1. Клонируйте репозиторий:
-      git clone https://github.com/ваш-аккаунт/PKG_Lab3.git
+      git clone https://github.com/mda-les13/Digital-Image-Processing-Basic.git
    
 2. Откройте решение в Visual Studio.
 3. Постройте проект и запустите его.
